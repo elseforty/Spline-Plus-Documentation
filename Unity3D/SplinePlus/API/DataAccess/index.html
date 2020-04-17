@@ -1,0 +1,1608 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Data Access - Spline Plus Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#spdata-spline-plus-data" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="Spline Plus Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Spline Plus Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Data Access
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="Spline Plus Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Spline Plus Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Unity 3D
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Unity 3D
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-1-1">
+      Spline Plus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-1">
+        Spline Plus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneralInformation/" title="General information" class="md-nav__link">
+      General information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplineEditing/" title="Spline editing" class="md-nav__link">
+      Spline editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Inspector/" title="Inspector" class="md-nav__link">
+      Inspector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../FollowerSettings/" title="Follower Settings" class="md-nav__link">
+      Follower Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SceneViewUI/" title="Scene view UI" class="md-nav__link">
+      Scene view UI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../PathGenerator/" title="Path Generator" class="md-nav__link">
+      Path Generator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneralSettings/" title="General Settings" class="md-nav__link">
+      General Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shortcuts/" title="Shortcuts" class="md-nav__link">
+      Shortcuts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1-10" type="checkbox" id="nav-1-1-10" checked>
+    
+    <label class="md-nav__link" for="nav-1-1-10">
+      API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-1-10">
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Methods/" title="Methods" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Access
+      </label>
+    
+    <a href="./" title="Data Access" class="md-nav__link md-nav__link--active">
+      Data Access
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#spdata-spline-plus-data" class="md-nav__link">
+    SPData (Spline Plus Data)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodes" class="md-nav__link">
+    Nodes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#node-points" class="md-nav__link">
+    Node Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-node-shared" class="md-nav__link">
+    Is node shared
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-connected-branches" class="md-nav__link">
+    Node connected branches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-speed" class="md-nav__link">
+    Node speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-normal" class="md-nav__link">
+    Node normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-distance" class="md-nav__link">
+    Node distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firstlast-node" class="md-nav__link">
+    First/Last Node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertices-normals-tangents" class="md-nav__link">
+    Vertices, Normals, Tangents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-length" class="md-nav__link">
+    Branch Length
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#followers" class="md-nav__link">
+    Followers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-followers" class="md-nav__link">
+    Simple Followers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#follower-game-object" class="md-nav__link">
+    Follower Game Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress" class="md-nav__link">
+    Progress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speed" class="md-nav__link">
+    Speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-key" class="md-nav__link">
+    Branch key 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active" class="md-nav__link">
+    Active
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-data" class="md-nav__link">
+    Distance Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#train-followers" class="md-nav__link">
+    Train Followers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wagons" class="md-nav__link">
+    Wagons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path-finding-followers" class="md-nav__link">
+    Path Finding Followers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editor-selections" class="md-nav__link">
+    Editor Selections
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#follower-index" class="md-nav__link">
+    Follower Index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-key_1" class="md-nav__link">
+    Branch key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-index" class="md-nav__link">
+    Node index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-index" class="md-nav__link">
+    Agent index
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Examples/" title="Examples" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+    
+    <label class="md-nav__link" for="nav-1-2">
+      Spline Path Finding
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        Spline Path Finding
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplinePathFinding/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplinePathFinding/Inspector/" title="Inspector" class="md-nav__link">
+      Inspector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplinePathFinding/FollowerSettings/" title="Follower Settings" class="md-nav__link">
+      Follower Settings
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
+    
+    <label class="md-nav__link" for="nav-1-3">
+      Spline Mesh Deform
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-3">
+        Spline Mesh Deform
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplineMeshDeform/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplineMeshDeform/MeshDeform/" title="Mesh Deform" class="md-nav__link">
+      Mesh Deform
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplineMeshDeform/Extrude/" title="Extrude" class="md-nav__link">
+      Extrude
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplineMeshDeform/PlaneMesh/" title="Plane Mesh" class="md-nav__link">
+      Plane Mesh
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../SplineMeshDeform/TubeMesh/" title="Tube Mesh" class="md-nav__link">
+      Tube Mesh
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Unreal Engine
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Unreal Engine
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Spline Plus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Spline Plus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../UnrealEngine/SplinePlus/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#spdata-spline-plus-data" class="md-nav__link">
+    SPData (Spline Plus Data)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodes" class="md-nav__link">
+    Nodes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#node-points" class="md-nav__link">
+    Node Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-node-shared" class="md-nav__link">
+    Is node shared
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-connected-branches" class="md-nav__link">
+    Node connected branches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-speed" class="md-nav__link">
+    Node speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-normal" class="md-nav__link">
+    Node normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-distance" class="md-nav__link">
+    Node distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firstlast-node" class="md-nav__link">
+    First/Last Node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertices-normals-tangents" class="md-nav__link">
+    Vertices, Normals, Tangents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-length" class="md-nav__link">
+    Branch Length
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#followers" class="md-nav__link">
+    Followers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-followers" class="md-nav__link">
+    Simple Followers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#follower-game-object" class="md-nav__link">
+    Follower Game Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress" class="md-nav__link">
+    Progress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speed" class="md-nav__link">
+    Speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-key" class="md-nav__link">
+    Branch key 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active" class="md-nav__link">
+    Active
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-data" class="md-nav__link">
+    Distance Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#train-followers" class="md-nav__link">
+    Train Followers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wagons" class="md-nav__link">
+    Wagons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path-finding-followers" class="md-nav__link">
+    Path Finding Followers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editor-selections" class="md-nav__link">
+    Editor Selections
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#follower-index" class="md-nav__link">
+    Follower Index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-key_1" class="md-nav__link">
+    Branch key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-index" class="md-nav__link">
+    Node index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-index" class="md-nav__link">
+    Agent index
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Data Access</h1>
+                
+                <style>
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+
+<p><img src="../images/SplinePlusLogo.png"
+alt="Markdown Monster icon"
+style="margin-center: 10px;" />
+</br></p>
+<h2 id="spdata-spline-plus-data">SPData (Spline Plus Data)</h2>
+<p>SPData is a data class for the monobehaviour Spline Plus, all data access for a Spline Plus Game object should be done from SPData</p>
+<p>you can get  the SPData if you already have your spline plus game object in your scene view like this</p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">(){</span>
+ <span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>When using the Spline plus API , this is how you can get the SPData</p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">(){</span>
+<span class="n">sPData</span> <span class="o">=</span> <span class="n">SplinePlusAPI</span><span class="p">.</span><span class="na">CreateSplinePlus</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="branches"><span style="color:blue">Branches</span></h2>
+<p>Spline plus is a branching spline system which means that it supports multiple branches,<br />
+Branches are stored in a Dictionnary, the reason behind using dictionnaries instead of lists is purely technical, the dictionnary keys are integers,<br />
+To access a branch you do like this </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+ <span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">Branch</span> <span class="n">branch</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="nodes"><span style="color:#85C1E9">Nodes</span></h3>
+<p>a branch is a group of nodes, so each branch object has a list of nodes   </p>
+<p>for an example if you want to acces the nodes list of a branch, you do like this  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="node-points"><span style="color:#ABB2B9">Node Points</span></h4>
+<p><img src="../images/NodeInfo.jpg"
+alt="Markdown Monster icon"
+style="margin-center: 10px; width: 450px" /> </br>
+Transfoms that control the node position(Point) and node handles (Point1 and point2)
+"Point1" and "Point2" are transforms children of the main transform "Point"</p>
+<p>See example bellow </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="n">GameObject</span> <span class="n">MyFollower</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="p">;</span>
+<span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="c1">// change node position</span>
+<span class="n">node</span><span class="p">.</span><span class="na">Point</span><span class="p">.</span><span class="na">Position</span><span class="o">=</span> <span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">);</span>
+<span class="c1">// change node handles position</span>
+<span class="n">node</span><span class="p">.</span><span class="na">Point1</span><span class="p">.</span><span class="na">localPosition</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span> 
+<span class="n">node</span><span class="p">.</span><span class="na">Point2</span><span class="p">.</span><span class="na">localPosition</span> <span class="o">=</span> <span class="o">-</span><span class="n">node</span><span class="p">.</span><span class="na">Point1</span><span class="p">.</span><span class="na">localPosition</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="is-node-shared"><span style="color:#ABB2B9">Is node shared</span></h4>
+<p>Check if the node is shared or not
+See example bellow </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="n">GameObject</span> <span class="n">MyFollower</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="p">;</span>
+<span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="na">IsShared</span><span class="p">)</span><span class="n">Debug</span><span class="p">.</span><span class="na">Log</span><span class="p">(</span><span class="s">&quot;Node is shared&quot;</span><span class="p">);</span>
+<span class="k">else</span> <span class="n">Debug</span><span class="p">.</span><span class="na">Log</span><span class="p">(</span><span class="s">&quot;Node not shared&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="node-connected-branches"><span style="color:#ABB2B9">Node connected branches</span></h4>
+<p>get the list of branch key connected to the node, if node is not shared you will get just one branch key
+See example bellow </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="n">GameObject</span> <span class="n">MyFollower</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="p">;</span>
+<span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="kd">var</span> <span class="n">nodeBranchKey</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="na">SharedNodeData</span><span class="p">.</span><span class="na">ConnectedBranches</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nodeBranchKey</span><span class="p">.</span><span class="na">Count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+     <span class="n">Debug</span><span class="p">.</span><span class="na">Log</span><span class="p">(</span><span class="s">&quot;node is on branch with key&quot;</span> <span class="o">+</span> <span class="n">nodeBranchKey</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="node-speed"><span style="color:#ABB2B9">Node speed</span></h4>
+<p>The node speed value
+See example bellow </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="n">GameObject</span> <span class="n">MyFollower</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="p">;</span>
+<span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">nodeSpeed</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="na">SharedNodeData</span><span class="p">.</span><span class="na">Speed</span><span class="p">;</span>  
+<span class="c1">// node normals factor varies form -180 to 180  </span>
+<span class="kt">int</span> <span class="n">nodeNormal</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="na">SharedNodeData</span><span class="p">.</span><span class="na">NormalFactor</span><span class="p">;</span>
+<span class="c1">//you need to call the function bellow to force the spline recalculation</span>
+<span class="n">sPData</span><span class="p">.</span><span class="na">SplinePlus</span><span class="p">.</span><span class="na">SplineCreationClass</span><span class="p">.</span><span class="na">UpdateAllBranches</span><span class="p">(</span><span class="n">sPData</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="node-normal"><span style="color:#ABB2B9">Node normal</span></h4>
+<p>The node normal value
+See example bellow </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="n">GameObject</span> <span class="n">MyFollower</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="p">;</span>
+<span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="c1">// node normals factor varies form -180 to 180</span>
+<span class="kt">int</span> <span class="n">nodeNormal</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="na">SharedNodeData</span><span class="p">.</span><span class="na">NormalFactor</span><span class="p">;</span>
+<span class="c1">//you need to call the function bellow to force the spline recalculation</span>
+<span class="n">sPData</span><span class="p">.</span><span class="na">SplinePlus</span><span class="p">.</span><span class="na">SplineCreationClass</span><span class="p">.</span><span class="na">UpdateAllBranches</span><span class="p">(</span><span class="n">sPData</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="node-distance"><span style="color:#ABB2B9">Node distance</span></h4>
+<p>The node distance value on the branch
+See example bellow </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="n">GameObject</span> <span class="n">MyFollower</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="p">;</span>
+<span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">nodeDistance</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="na">SharedNodeData</span><span class="p">.</span><span class="na">Distance</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="firstlast-node"><span style="color:#85C1E9">First/Last Node</span></h3>
+<p>You can get the first or last node of your branch without having to access the nodes list, see example bellow  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Get first and last node of a branch</span>
+<span class="n">Node</span> <span class="n">firstNode</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">FirstNode</span><span class="p">;</span>
+<span class="n">Node</span> <span class="n">lastNode</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">LastNode</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="vertices-normals-tangents"><span style="color:#85C1E9">Vertices, Normals, Tangents</span></h3>
+<p>to access the branch Vertices, Normals, Tangents that defines the branch bezier you need to do something like this  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Vertices, Normals, Tangents  of branch with key 3</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Vector3</span><span class="o">&gt;</span> <span class="n">vertices</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Vertices</span><span class="p">;</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Vector3</span><span class="o">&gt;</span> <span class="n">normals</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Normals</span><span class="p">;</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Vector3</span><span class="o">&gt;</span> <span class="n">tangents</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Tangents</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="branch-length"><span style="color:#85C1E9">Branch Length</span></h3>
+<p>To get the branch length (Distance), see example bellow</p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Get branch length</span>
+<span class="kt">float</span> <span class="n">branchLength</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">DictBranches</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">Length</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="followers"><span style="color:blue">Followers</span></h2>
+<p>There are 3 type of followers in Spline plus</p>
+<h3 id="simple-followers"><span style="color:#85C1E9">Simple Followers</span></h3>
+<p>This is the most basic form of followers in Spline Plus
+you can have access the list of simple followers like this  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">simpleFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Followers</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="follower-game-object"><span style="color:#ABB2B9">Follower Game Object</span></h4>
+<p>FollowerGO is the game object that you want to use as follower
+see example bellow on how to access follower game object</p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="n">GameObject</span> <span class="n">MyFollower</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">simpleFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Followers</span><span class="p">;</span>
+<span class="c1">//Access first simple follower and set its follower gameObject to MyFollower</span>
+<span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">FollowerGO</span><span class="o">=</span><span class="n">MyFollower</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="progress"><span style="color:#ABB2B9">Progress</span></h4>
+<p>Progress is the current distance of the follower on the branch, the max is the length of the branch.<br />
+see example bellow on how to access follower progress</p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">simpleFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Followers</span><span class="p">;</span>
+<span class="c1">//Access first simple follower and set its progress to 0</span>
+<span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">Progress</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="speed"><span style="color:#ABB2B9">Speed</span></h4>
+<p>The speed of the follower. 
+see example bellow on how to access follower speed</p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">simpleFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Followers</span><span class="p">;</span>
+<span class="c1">//Access first simple follower and set its speed to 7</span>
+<span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">Speed</span><span class="o">=</span><span class="mi">7</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="branch-key"><span style="color:#ABB2B9">Branch key </span></h4>
+<p>Current follower branch.  <br />
+see example bellow on how to access follower branch key</p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">simpleFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Followers</span><span class="p">;</span>
+<span class="c1">//Access first simple follower and set its branch key to 7</span>
+<span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">BranchKey</span><span class="o">=</span><span class="mi">7</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="active"><span style="color:#ABB2B9">Active</span></h4>
+<p>Enable/Disable follower animation.
+use the code bellow  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">simpleFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Followers</span><span class="p">;</span>
+<span class="c1">//Stop follower animation</span>
+<span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">Active</span> <span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="distance-data"><span style="color:#ABB2B9">Distance Data</span></h4>
+<p>To get the current position, rotation, vertex index of the follower<br />
+use the code bellow  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">simpleFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Followers</span><span class="p">;</span>
+<span class="c1">//Access first simple follower distance data</span>
+
+<span class="c1">//follower position</span>
+<span class="n">Vector3</span> <span class="n">position</span> <span class="o">=</span> <span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">DistanceData</span><span class="p">.</span><span class="na">Position</span><span class="p">;</span>
+<span class="c1">//follower rotation </span>
+<span class="n">Quaternion</span> <span class="n">rotation</span> <span class="o">=</span> <span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">DistanceData</span><span class="p">.</span><span class="na">Rotation</span><span class="p">;</span>
+<span class="c1">//Current vertex index follower is on</span>
+<span class="kt">int</span> <span class="n">vertexIndex</span><span class="o">=</span> <span class="n">simpleFollowers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">DistanceData</span><span class="p">.</span><span class="na">Index</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="train-followers"><span style="color:#85C1E9">Train Followers</span></h3>
+<p>Spline Plus has followers that behave like trains, 
+you can have access the list of train followers like this  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of train followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Train</span><span class="o">&gt;</span> <span class="n">trains</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Trains</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h4 id="wagons"><span style="color:#ABB2B9">Wagons</span></h4>
+<p>To get access to wagons, which is basicaly a list of simple followers
+use the code bellow  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of simple followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Train</span><span class="o">&gt;</span> <span class="n">trains</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">Trains</span><span class="p">;</span>
+<span class="c1">//Access first train wagons</span>
+<span class="n">Train</span> <span class="n">train</span> <span class="o">=</span><span class="n">trains</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="c1">//Access train wagons</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Follower</span><span class="o">&gt;</span> <span class="n">wagons</span><span class="o">=</span> <span class="n">train</span><span class="p">.</span><span class="na">Wagons</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="path-finding-followers"><span style="color:#85C1E9">Path Finding Followers</span></h3>
+<p>If you have path finding package in your project then you should be able to access path finding followers like bellow  </p>
+<div class="codehilite"><pre><span></span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="c1">//Access list of train followers</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">PathFindingFollower</span><span class="o">&gt;</span> <span class="n">pFFollowers</span> <span class="o">=</span> <span class="n">sPData</span><span class="p">.</span><span class="na">PFFollowers</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="editor-selections">Editor Selections</h2>
+<p>Elements that you can access in edit mode in case you want to add more customized features based on your project need .</p>
+<h3 id="follower-index"><span style="color:#85C1E9">Follower Index</span></h3>
+<p>Get the follower index selection in the followers list in your spline plus inspector</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="n">SPData</span> <span class="n">SPData</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>   
+<span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">currentFollowerIndex</span> <span class="o">=</span><span class="n">sPData</span><span class="p">.</span><span class="na">Selections</span><span class="p">.</span><span class="na">_FollowerIndex</span><span class="p">;</span>
+<span class="p">}</span> 
+</pre></div>
+
+
+<h3 id="branch-key_1"><span style="color:#85C1E9">Branch key</span></h3>
+<p>Get the  scene view branch key selected in the branches dictionnary </p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="n">SPData</span> <span class="n">SPData</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>   
+ <span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+ <span class="kt">int</span> <span class="n">currentbranchKey</span><span class="o">=</span><span class="n">sPData</span><span class="p">.</span><span class="na">Selections</span><span class="p">.</span><span class="na">_BranchKey</span><span class="p">;</span>
+<span class="p">}</span> 
+</pre></div>
+
+
+<h3 id="node-index"><span style="color:#85C1E9">Node index</span></h3>
+<p>Get the scene view node index selected in the branch nodes list </p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="n">SPData</span> <span class="n">sPData</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>   
+ <span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+ <span class="n">Node</span> <span class="n">currentNode</span> <span class="o">=</span><span class="n">sPData</span><span class="p">.</span><span class="na">Selections</span><span class="p">.</span><span class="na">_NodeIndex</span><span class="p">;</span>
+ <span class="p">}</span> 
+</pre></div>
+
+
+<h3 id="agent-index"><span style="color:#85C1E9">Agent index</span></h3>
+<p>Get the inspector agent index selected from your agents list</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="n">SPData</span> <span class="n">SPData</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>   
+ <span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+ <span class="kt">int</span> <span class="n">currentLocalNodeIndex</span> <span class="o">=</span><span class="n">sPData</span><span class="p">.</span><span class="na">Selections</span><span class="p">.</span><span class="na">_AgentIndex</span><span class="p">;</span>
+<span class="p">}</span> 
+</pre></div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Methods/" title="Methods" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Methods
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Examples/" title="Examples" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Examples
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>

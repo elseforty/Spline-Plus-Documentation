@@ -1,0 +1,932 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Mesh Deform - Spline Plus Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#settings" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Spline Plus Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Spline Plus Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Mesh Deform
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Spline Plus Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Spline Plus Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Unity 3D
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Unity 3D
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1">
+    
+    <label class="md-nav__link" for="nav-1-1">
+      Spline Plus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-1">
+        Spline Plus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/GeneralInformation/" title="General information" class="md-nav__link">
+      General information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/SplineEditing/" title="Spline editing" class="md-nav__link">
+      Spline editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/Inspector/" title="Inspector" class="md-nav__link">
+      Inspector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/FollowerSettings/" title="Follower Settings" class="md-nav__link">
+      Follower Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/SceneViewUI/" title="Scene view UI" class="md-nav__link">
+      Scene view UI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/PathGenerator/" title="Path Generator" class="md-nav__link">
+      Path Generator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/GeneralSettings/" title="General Settings" class="md-nav__link">
+      General Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/Shortcuts/" title="Shortcuts" class="md-nav__link">
+      Shortcuts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1-10" type="checkbox" id="nav-1-1-10">
+    
+    <label class="md-nav__link" for="nav-1-1-10">
+      API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-1-10">
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/API/Methods/" title="Methods" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/API/DataAccess/" title="Data Access" class="md-nav__link">
+      Data Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePlus/API/Examples/" title="Examples" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+    
+    <label class="md-nav__link" for="nav-1-2">
+      Spline Path Finding
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        Spline Path Finding
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePathFinding/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePathFinding/Inspector/" title="Inspector" class="md-nav__link">
+      Inspector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SplinePathFinding/FollowerSettings/" title="Follower Settings" class="md-nav__link">
+      Follower Settings
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3" checked>
+    
+    <label class="md-nav__link" for="nav-1-3">
+      Spline Mesh Deform
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-3">
+        Spline Mesh Deform
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Mesh Deform
+      </label>
+    
+    <a href="./" title="Mesh Deform" class="md-nav__link md-nav__link--active">
+      Mesh Deform
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch" class="md-nav__link">
+    Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefab-mesh" class="md-nav__link">
+    Prefab Mesh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared" class="md-nav__link">
+    Shared
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extrude/" title="Extrude" class="md-nav__link">
+      Extrude
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PlaneMesh/" title="Plane Mesh" class="md-nav__link">
+      Plane Mesh
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../TubeMesh/" title="Tube Mesh" class="md-nav__link">
+      Tube Mesh
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Unreal Engine
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Unreal Engine
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Spline Plus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Spline Plus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../UnrealEngine/SplinePlus/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch" class="md-nav__link">
+    Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefab-mesh" class="md-nav__link">
+    Prefab Mesh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared" class="md-nav__link">
+    Shared
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Mesh Deform</h1>
+                
+                <style>
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+
+<p>A procedural mesh generation tool  for custom meshes  on all Spline plus branches.  </p>
+<p><img src="../images/SMD.png"
+alt="Markdown Monster icon"
+style="margin-left: 10px; width : 450px" />
+</br></p>
+<h2 id="settings">Settings</h2>
+<h3 id="branch">Branch</h3>
+<table>
+<thead>
+<tr>
+<th>Variables</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prefab meshes area</td>
+<td><img src="../images/PrefabMeshesArea.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /> </br>  This contains the list of prefab meshes which user drag from the project window,</br> the area is used to organize the meshes combination process, each prefab mesh “Mesh” has its own settings listed below,</br>For each branch there is new prefab meshes list,so once you change branches selection you will see that the prefab meshes list changes as well,</br> Ps :Meshes need to be dragged from the project window and dropped into the prefab meshes area.</br> <strong><em>Select prefab mesh:</em></strong> each prefab mesh is represented in the prefab meshes area with a selectable prefab texture button, </br>Click on the prefab mesh texture button to select the desirable prefab mesh. </br></br><img src="../images/PrefabMeshesSelection.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prefab-mesh">Prefab Mesh</h3>
+<table>
+<thead>
+<tr>
+<th>Variables</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="../images/Delete.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 20px" /></td>
+<td>Delete the selected prefab mesh</td>
+</tr>
+<tr>
+<td><img src="../images/ShowHide.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 20px" /></td>
+<td>Hide/unhide the selected  prefab mesh.</td>
+</tr>
+<tr>
+<td><img src="../images/Duplicate.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 20px" /></td>
+<td>Duplicate the selected prefab mesh.</td>
+</tr>
+<tr>
+<td>Prefab mesh name</td>
+<td>It usually receives the prefab name but it can be edited to whatever value you want, just click on the text area and start typing for editing. </br><img src="../images/PrefabMeshName.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Material section for the selectable prefab mesh.</br>Spline mesh deform supports multiple materials.</br>You can add the selected prefab mesh material to the materials list by setting unique to true,</br><img src="../images/Material.jpg"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></br>This will add the selected prefab mesh material to the materials list so it can be reused by other prefab meshes.</br> The list contains all the unique materials that will be found in the final mesh.</br> </br><img src="../images/Materials.jpg"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></br> This will optimize performance by not having duplicate materials in your final mesh.</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Currently there are two types supported , </br><strong> Alignment: </strong>this aligns the meshes along the spline branches without performing a deformation,</br> <strong>Deformation:</strong> this alings the meshes along the spline branches and perform deformation as well,</td>
+</tr>
+<tr>
+<td>Mesh trim</td>
+<td>Used to define the extensions of a deformed mesh when exceeding the branch distance limit, this appears only if you are using deformation,</br> available options: None, Left, Right, Both </br><img src="../images/MeshTrimLeft.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 300px" /> </br><img src="../images/MeshTrimBoth.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 300px" /></td>
+</tr>
+<tr>
+<td>Mirror axis</td>
+<td>Used to create a mirror effect on a defined axis, you can use rotation and translation to create a mirroring offse</br> <img src="../images/Mirror.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></br> <img src="../images/MirrorOffset.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></td>
+</tr>
+<tr>
+<td>Offset</td>
+<td>Translate the procedural calculated meshes.</td>
+</tr>
+<tr>
+<td>Rotation</td>
+<td>Rotate the procedural calculated meshes. </br>Lock : Used to lock the rotation, the meshes will follow the spline rotation data on the Z axis only </br>ps:This can be used in Alignment mode only, </br> <strong>Lock Off</strong></br><img src="../images/LockOff.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 200px" /> <strong>Lock On</strong></br><img src="../images/LockOn.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 200px" /> </br></td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>Scale the procedural calculated meshes  </br> <strong>Unif </strong> set it to On in case you want to scale the procedural calculated  meshes on all 3 axes all at once, set it to Off  in case you want to scale on separate axis,</td>
+</tr>
+<tr>
+<td>Rand</td>
+<td>Used to create a random Offset, Rotation or Scale behaviour </br>Once Rand is set to On then new Offset , Rotation or Scale fields appear , the randomization will be done between the two fields values.</br><img src="../images/Rand.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></td>
+</tr>
+<tr>
+<td>Seed</td>
+<td>Used to change the randomization seed</td>
+</tr>
+<tr>
+<td>Tiling</td>
+<td>Used to define how many times you want the mesh to be repeated along the spline.</td>
+</tr>
+<tr>
+<td>Auto tiling</td>
+<td>This calculates automatically how many meshes from the selected prefab mesh fits into the spline branch while taking into consideration the spacing value.</td>
+</tr>
+<tr>
+<td>Spacing</td>
+<td>Used to control the space between the meshes of the prefab mesh.</td>
+</tr>
+<tr>
+<td>Linked/ Unlinked</td>
+<td>This links the spacing of all the other prefab meshes to the currently selected prefab mesh,</br>This helps you move prefab meshes all at once instead of going through them one by one</td>
+</tr>
+<tr>
+<td>Placement</td>
+<td>Used to offset the meshes on the spline branch direction.</br><img src="../images/Placement.jpg"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="shared">Shared</h3>
+<p>Shared settings between branches and prefab meshes.<br />
+<img src="../images/SharedSettings.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></br></p>
+<table>
+<thead>
+<tr>
+<th>Variables</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deformation processing</td>
+<td>The processing method used for the deformed mesh calculation ,</br>There are 3 options available, GPU , CPU Multi threaded, CPU Single threaded </br> <img src="../images/DeformationProcessing.png"alt="Markdown Monster icon"style="margin-left: 10px; width : 450px" /></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>Export mesh to an asset file , the file can be found in "Assets/SMDExport"</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Extrude/" title="Extrude" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Extrude
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
