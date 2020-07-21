@@ -849,8 +849,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#important" class="md-nav__link">
-    Important
+  <a href="#no-prefab-mesh-children" class="md-nav__link">
+    No Prefab Mesh Children
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-components-in-a-prefab-mesh" class="md-nav__link">
+    Required Components in a prefab mesh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity-vertices-limit" class="md-nav__link">
+    Unity Vertices Limit
   </a>
   
 </li>
@@ -1087,8 +1101,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#important" class="md-nav__link">
-    Important
+  <a href="#no-prefab-mesh-children" class="md-nav__link">
+    No Prefab Mesh Children
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-components-in-a-prefab-mesh" class="md-nav__link">
+    Required Components in a prefab mesh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity-vertices-limit" class="md-nav__link">
+    Unity Vertices Limit
   </a>
   
 </li>
@@ -1132,7 +1160,7 @@ The 3 children game objects, each one will hold a branch procedural mesh data, a
 alt="Markdown Monster icon"
 style="margin-left: auto; width : 600px" />
 </br></p>
-<h3 id="important">Important</h3>
+<h2 id="no-prefab-mesh-children">No Prefab Mesh Children</h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Only Prefab mesh parent game object is consumed when used in Spline Mesh Deform.   </p>
@@ -1141,11 +1169,37 @@ style="margin-left: auto; width : 600px" />
 alt="Markdown Monster icon"
 style="margin-left: auto; width : 400px" />
 </br></p>
+<h2 id="required-components-in-a-prefab-mesh">Required Components in a prefab mesh</h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>It is required for Prefab mesh to have a "Mesh Filter" and "Mesh Renderer" components attached to the parent game object.</p>
 </div>
 <p><img src="../images/PrefabMeshInspector.png"
+alt="Markdown Monster icon"
+style="margin-left: auto; width : 400px" />
+</br></p>
+<h2 id="unity-vertices-limit">Unity Vertices Limit</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Unity vertices limit for a single game object is 64K, once you go beyond this limit you will experience some weird mesh issues, </p>
+</div>
+<p>In the example bellow, we cannot keep adding Rail meshes to the branch, cause we have exceeded the Unity vertices limit set to 64k vertices,</p>
+<p><img src="../images/VerticesLimit.png"
+alt="Markdown Monster icon"
+style="margin-left: auto; width : 400px" />
+</br>
+<img src="../images/VerticesLimit1.png"
+alt="Markdown Monster icon"
+style="margin-left: auto; width : 400px" />
+</br></p>
+<p>The solution is to break the branch, <br />
+This will create  us two branches and eventually create two mesh holder game objects instead of just one, <br />
+The mesh data will be divided between the two mesh holder game objects created.   <br />
+<img src="../images/VerticesLimit2.png"
+alt="Markdown Monster icon"
+style="margin-left: auto; width : 400px" />
+</br>
+<img src="../images/VerticesLimit3.png"
 alt="Markdown Monster icon"
 style="margin-left: auto; width : 400px" />
 </br></p>
